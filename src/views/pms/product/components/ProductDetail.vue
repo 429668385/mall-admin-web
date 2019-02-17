@@ -71,8 +71,9 @@
     //商品满减
     productFullReductionList: [{fullPrice: 0, reducePrice: 0}],
     //商品阶梯价格
-    productLadderList: [{count: 0,discount: 0,price: 0}],
+    productLadderList: [{count: 0,discount: 0,price: 0, priceIn: 0}],
     previewStatus: 0,
+    priceIn: 0,
     price: 0,
     productAttributeCategoryId: null,
     //商品属性相关{productAttributeId: 0, value: ''}

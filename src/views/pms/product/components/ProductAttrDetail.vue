@@ -48,6 +48,14 @@
             </template>
           </el-table-column>
           <el-table-column
+            label="商品进价"
+            width="80"
+            align="center">
+            <template slot-scope="scope">
+              <el-input v-model="scope.row.priceIn"></el-input>
+            </template>
+          </el-table-column>
+          <el-table-column
             label="销售价格"
             width="80"
             align="center">
@@ -416,8 +424,10 @@
         }).then(() => {
           if(this.value.skuStockList!==null&&this.value.skuStockList.length>0){
             let price=this.value.skuStockList[0].price;
+            let priceIn=this.value.skuStockList[0].priceIn;
             for(let i=0;i<this.value.skuStockList.length;i++){
               this.value.skuStockList[i].price=price;
+              this.value.skuStockList[i].priceIn=priceIn;
             }
           }
         });

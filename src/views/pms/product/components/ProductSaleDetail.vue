@@ -244,7 +244,8 @@
           productLadderList.push({
             count: 0,
             discount: 0,
-            price: 0
+            price: 0,
+            priceIn: 0
           })
         } else {
           productLadderList.splice(index, 1);
@@ -256,7 +257,8 @@
           productLadderList.push({
             count: 0,
             discount: 0,
-            price: 0
+            price: 0,
+            priceIn: 0
           })
         } else {
           this.$message({

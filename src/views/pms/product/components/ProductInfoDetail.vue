@@ -36,6 +36,9 @@
       <el-form-item label="商品货号：">
         <el-input v-model="value.productSn"></el-input>
       </el-form-item>
+      <el-form-item label="商品进价：">
+        <el-input v-model="value.priceIn"></el-input>
+      </el-form-item>
       <el-form-item label="商品售价：">
         <el-input v-model="value.price"></el-input>
       </el-form-item>

@@ -120,6 +120,9 @@
         <el-form-item label="商品价格：">
           <span>￥{{flashProductRelation.product.price}}</span>
         </el-form-item>
+        <el-form-item label="商品进价：">
+          <span>￥{{flashProductRelation.product.priceIn}}</span>
+        </el-form-item>
         <el-form-item label="秒杀价格：">
           <el-input v-model="flashProductRelation.flashPromotionPrice" class="input-width">
             <template slot="prepend">￥</template>
