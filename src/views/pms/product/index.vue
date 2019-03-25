@@ -99,6 +99,7 @@
         <el-table-column label="价格/货号" width="120" align="center">
           <template slot-scope="scope">
             <p>价格：￥{{scope.row.price}}</p>
+            <p>进价：￥{{scope.row.priceIn}}</p>
             <p>货号：{{scope.row.productSn}}</p>
           </template>
         </el-table-column>
@@ -245,6 +246,14 @@
           align="center">
           <template slot-scope="scope">
             <el-input v-model="scope.row.price"></el-input>
+          </template>
+        </el-table-column>
+        <el-table-column
+          label="商品进价"
+          width="80"
+          align="center">
+          <template slot-scope="scope">
+            <el-input v-model="scope.row.priceIn"></el-input>
           </template>
         </el-table-column>
         <el-table-column
